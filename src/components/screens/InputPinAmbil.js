@@ -40,12 +40,13 @@ const InputPinAmbil = () => {
       })
       .then((res) => {
         console.log(res.data);
+        const boxNumber = res.data.data.box_number;
         if (res.data.code == 200) {
           axios({
             method: "POST",
             url: "http://127.0.0.1:5000" + "/unlock",
             data: {
-              locker: "8",
+              locker: boxNumber,
             },
           })
             .then((res) => {
