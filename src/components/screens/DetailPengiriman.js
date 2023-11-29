@@ -32,6 +32,7 @@ function lanjut() {
       box_size: Cookies.get("dimensi"),
       merchant_name: Cookies.get("ekspedisi"),
       receiver: Cookies.get("penerima"),
+      receiver_phone_number: Cookies.get("nomorPenerima"),
     },
   }).then((res) => {
     console.log(res.data.data);
