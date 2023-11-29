@@ -39,7 +39,7 @@ function lanjut() {
     if (res.data.code == 200) {
       axios({
         method: "POST",
-        url: "http://192.168.0.105:5000" + "/unlock",
+        url: "http://127.0.0.1:5000" + "/unlock",
         data: {
           locker: boxNumber,
         },
