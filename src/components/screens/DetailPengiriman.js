@@ -48,7 +48,7 @@ function lanjut() {
       })
         .then((res) => {
           console.log(res);
-          // window.location.href = "/LokerTerbukaAmbil";
+          window.location.href = "/LokerTerbukaAmbil";
         })
         .catch((error) => {
           console.error(error);
