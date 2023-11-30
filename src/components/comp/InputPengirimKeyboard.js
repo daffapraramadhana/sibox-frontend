@@ -240,6 +240,7 @@ class InputPengirimKeyboard extends Component {
               type="text"
               placeholder="Masukan Nama Pengirim "
               style={{ fontSize: "30px" }}
+              autoComplete="off"
             />
           </Form.Group>
 
@@ -283,6 +284,7 @@ class InputPengirimKeyboard extends Component {
               style={{ fontSize: "30px" }}
               maxLength={14}
               minLength={12}
+              autoComplete="off"
             />
             {/* <InputPhoneNumber /> */}
           </Form.Group>

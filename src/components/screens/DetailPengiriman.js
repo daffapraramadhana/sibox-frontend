@@ -37,6 +37,7 @@ function lanjut() {
   }).then((res) => {
     console.log(res.data.data);
     const boxNumber = res.data.data.box_number;
+    console.log("boxNumber", boxNumber);
     if (res.data.code == 200) {
       axios({
         method: "POST",
@@ -47,7 +48,7 @@ function lanjut() {
       })
         .then((res) => {
           console.log(res);
-          window.location.href = "/LokerTerbukaAmbil";
+          // window.location.href = "/LokerTerbukaAmbil";
         })
         .catch((error) => {
           console.error(error);

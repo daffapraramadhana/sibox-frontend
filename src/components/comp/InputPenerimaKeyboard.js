@@ -118,7 +118,6 @@ class InputPenerimaKeyboard extends Component {
     let { input, keyboardOpen } = this.state;
     Cookies.set("penerima", input.inputPenerima);
     Cookies.set("nomorPenerima", input.inputNomorPenerima);
-    
 
     return (
       <div>
@@ -135,6 +134,7 @@ class InputPenerimaKeyboard extends Component {
               type="text"
               placeholder="Masukan Nama Penerima "
               style={{ fontSize: "30px" }}
+              autoComplete="off"
             />
           </Form.Group>
 
@@ -155,6 +155,7 @@ class InputPenerimaKeyboard extends Component {
               type="text"
               placeholder="Masukan No Telpon Penerima "
               style={{ fontSize: "30px" }}
+              autoComplete="off"
             />
             <Form.Text className="text-muted">
               Pastikan Nomor Yang Anda Masukan Benar, Kode Pengambilan Akan
